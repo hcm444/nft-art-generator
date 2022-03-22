@@ -1,3 +1,5 @@
+from main import body_array, eyes_array, mouth_array, nose_array, background_array, amount
+
 
 def statictics(NFT_array):
     print(NFT_array)
