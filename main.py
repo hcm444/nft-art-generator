@@ -4,9 +4,8 @@ from itertools import product
 
 # generate.py
 # test classes here
-# generate 10000 of them and crash your computer!
 
-# This function will generate all possible permutations!
+# This function will generate all possible permutations
 if __name__ == "__main__":
     layer1 = [1, 2, 3, 4, 5]
     layer2 = [1, 2, 3, 4, 5]
