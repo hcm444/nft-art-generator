@@ -1,7 +1,7 @@
 from main import body_array, eyes_array, mouth_array, nose_array, background_array, amount
 
 def statictics(NFT_array):
-
+    print(NFT_array)
     # statistics arrays show a heatmap of the rarity of the NFTs
     stat_body = [body_array.count(1), body_array.count(2), body_array.count(3), body_array.count(4), body_array.count(5)]
     stat_eyes = [eyes_array.count(1), eyes_array.count(2), eyes_array.count(3), eyes_array.count(4), eyes_array.count(5)]
