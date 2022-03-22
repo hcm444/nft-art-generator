@@ -10,7 +10,6 @@ def generate(v, w, x, y, z):
     mouth_value = Mouth(x)
     nose_value = Nose(y)
     background_value = Background(z)
-
     # numer array and description array
     num_array = [v, w, x, y, z]
     desc_array = [body_value, eyes_value, mouth_value, nose_value, background_value]
