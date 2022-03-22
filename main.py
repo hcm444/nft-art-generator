@@ -1,48 +1,28 @@
-from random import randint
-# need randint because to lazy to use seeds
+
 from generate import generate
+from itertools import product
 
 # generate.py
 # test classes here
 # generate 10000 of them and crash your computer!
-# created self explainatory arrays for values
-body_array = []
 
-eyes_array = []
-
-mouth_array = []
-
-nose_array = []
-
-background_array = []
-
-NFT_array = []
-
-counter = 0
-
-amount = 3
-
-while 0 <= counter < amount:
-    # while not at max amount of generated nfts
-    # fill respective values with random ints
-    v = randint(1, 5)
-    # append ints to int arrays
-    body_array.append(v)
-    w = randint(1, 5)
-    eyes_array.append(w)
-    x = randint(1, 5)
-    mouth_array.append(x)
-    y = randint(1, 5)
-    nose_array.append(y)
-    z = randint(1, 5)
-    background_array.append(z)
-    # make an array of arrays representing every NFT
-    # could do analysis here
-    NFT_array = [[v, w, x, y, z]]
-    # send the data to the generator
-    generate(v, w, x, y, z)
-    # apent NFT array after generation
-    NFT_array.append(NFT_array)
-    # increment counter
-    counter += 1
-
+# This function will generate all possible permutations!
+if __name__ == "__main__":
+    layer1 = [1, 2, 3, 4, 5]
+    layer2 = [1, 2, 3, 4, 5]
+    layer3 = [1, 2, 3, 4, 5]
+    layer4 = [1, 2, 3, 4, 5]
+    layer5 = [1, 2, 3, 4, 5]
+    # five arrays for every attribute
+    M = (list(product(layer1, layer2, layer3, layer4, layer5)))
+    # M is a list of every possible tuple
+    for counter in range(M.__len__()):
+        # parse through these tuples
+        attr0 = M[counter][0]
+        attr1 = M[counter][1]
+        attr2 = M[counter][2]
+        attr3 = M[counter][3]
+        attr4 = M[counter][4]
+        # save every respective place of the tuple for generate()
+        generate(attr0, attr1, attr2, attr3, attr4)
+        # remember how many permutations you have! ex: 5x5x5x5x5 = 3125 files!
