@@ -20,7 +20,7 @@ NFT_array = []
 
 counter = 0
 
-amount = 3
+amount = 20
 
 while 0 <= counter < amount:
     # while not at max amount of generated nfts
