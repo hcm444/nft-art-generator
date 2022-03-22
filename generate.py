@@ -91,9 +91,9 @@ def generate(body, eyes, mouth, nose, background):
     resized_img = attr0.resize((300, 300), Image.NEAREST)  # opensea size
     # save name as attributes number _ properties.png so I can easily perform data analysis.
     resized_img.save('NFT/{0}{1}{2}{3}{4}_{5}_{6}_{7}_{8}_{9}.png'.format(str(num_array[0]), str(num_array[1]),
-                                                                                 str(num_array[2]), str(num_array[3]),
-                                                                                 str(num_array[4]), body_value,
-                                                                                 eyes_value, mouth_value, nose_value,
-                                                                                 background_value), "PNG")
+                                                                          str(num_array[2]), str(num_array[3]),
+                                                                          str(num_array[4]), body_value,
+                                                                          eyes_value, mouth_value, nose_value,
+                                                                          background_value), "PNG")
 
     return
