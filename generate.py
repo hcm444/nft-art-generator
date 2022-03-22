@@ -77,11 +77,11 @@ def generate(body, eyes, mouth, nose, background):
     print(str(desc_array))
     print(num_array)
     # Open the images including the body
-    attr0 = Image.open('NFT/' + "Body/" + str(body) + ".png")
-    attr1 = Image.open('NFT/' + "Eyes/" + str(eyes) + ".png")
-    attr2 = Image.open('NFT/' + "Mouth/" + str(mouth) + ".png")
-    attr3 = Image.open('NFT/' + "Nose/" + str(nose) + ".png")
-    attr4 = Image.open('NFT/' + "Background/" + str(background) + ".png")
+    attr0 = Image.open('NFT/Body/{0}.png'.format(str(body)))
+    attr1 = Image.open('NFT/Eyes/{0}.png'.format(str(eyes)))
+    attr2 = Image.open('NFT/Mouth/{0}.png'.format(str(mouth)))
+    attr3 = Image.open('NFT/Nose/{0}.png'.format(str(nose)))
+    attr4 = Image.open('NFT/Background/{0}.png'.format(str(background)))
     # Paste/Merge Required images, everything pasted on body
     attr0.paste(attr1, (0, 0), attr1)
     attr0.paste(attr2, (0, 0), attr2)
