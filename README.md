@@ -1,5 +1,5 @@
 # nft-art-generator
-Generates NFT artwork from layers.
+Generates artwork from layers.
 
 ![54545_teal_tired_smile_small_morning](https://user-images.githubusercontent.com/32826270/159463512-509ff7b8-d00a-4a6c-8fb1-e8fd85a01763.png)
 ![54143_teal_tired_pursed_small_sunset](https://user-images.githubusercontent.com/32826270/159463514-8eb5ea1e-7ee3-4446-869b-d633177853e0.png)
