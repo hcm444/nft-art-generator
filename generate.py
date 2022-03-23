@@ -1,6 +1,5 @@
 from PIL import Image
 
-
 def generate(v, w, x, y, z):
     # generates NFT art and saves in it Output file
     # if else statements below match number of image to corresponding attribute for description

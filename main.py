@@ -27,8 +27,11 @@ def create():
 """TEST CLASSES"""
 # create()
 # This function will generate all possible permutations
+# Type specific (Body,Eyes,Mouth,Nose,Background)
 generate(1, 1, 1, 1, 1)
 generate(2, 2, 2, 2, 2)
 generate(3, 3, 3, 3, 3)
 generate(4, 4, 4, 4, 4)
 generate(5, 5, 5, 5, 5)
+generate(5, 5, 5, 2, 3)
+generate(5, 5, 5, 2, 1)
